@@ -3,30 +3,28 @@
 #include <locale.h>
 
 int verification_1(int tab[], int nbVal, int x){
-    int cpt = 0;
+    int cpt;
 
-    while(cpt <= nbVal){
+    for(cpt=1; cpt <= nbVal; cpt++){
         if(tab[cpt] == x){
             return 1;
         }
-        cpt++;
     }
     return 0;
 }
 
 int verification_2(int tab[], int nbVal, int x){
 
-    int cpt = 0;
-    int reponse = 0;
+    int cpt;
+    int reponse;
 
-    while(cpt <= nbVal){
+    for(cpt=1; cpt <= nbVal; cpt++){
         if(tab[cpt] == x){
             reponse = 1;
         }
         else{
             reponse = 0;
         }
-        cpt++;
     }
     return reponse;
 }
